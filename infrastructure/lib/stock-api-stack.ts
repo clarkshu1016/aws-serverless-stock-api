@@ -76,7 +76,7 @@ export class StockApiStack extends cdk.Stack {
       handler: 'index.handler',
       environment: {
         STOCKS_TABLE: stocksTable.tableName,
-        ALPHA_VANTAGE_API_KEY: '9W0K42I4JXTST7AQ', // Use AWS Secrets Manager or Parameter Store in real applications
+        ALPHA_VANTAGE_API_KEY: 'YOUR_API_KEY', // Replace with your Alpha Vantage API key
       },
     });
 
