@@ -1,0 +1,63 @@
+.stock-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stock-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stock-card-header {
+  margin-bottom: 16px;
+}
+
+.stock-symbol {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.company-name {
+  color: #666;
+  font-size: 14px;
+}
+
+.stock-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stock-change {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.stock-change.positive {
+  color: #4caf50;
+}
+
+.stock-change.negative {
+  color: #f44336;
+}
+
+.stock-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stock-card-actions .btn {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.stock-card-actions .btn:last-child {
+  margin-right: 0;
+}
