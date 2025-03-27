@@ -1,1 +1,50 @@
-IyBBV1MgU2VydmVybGVzcyBTdG9jayBBUEkKCkEgc2VydmVybGVzcyBhcHBsaWNhdGlvbiBmb3IgcmVhbC10aW1lIHN0b2NrIHByaWNlcyB3aXRoIE9BdXRoIFBLQ0UgYXV0aGVudGljYXRpb24gZmxvdy4KCiMjIEFyY2hpdGVjdHVyZQoKVGhpcyBhcHBsaWNhdGlvbiB1c2VzOgoKLSBBV1MgTGFtYmRhIGZvciBzZXJ2ZXJsZXNzIGNvbXB1dGUKLSBBbWF6b24gQVBJIEdhdGV3YXkgZm9yIFJFU1RmdWwgQVBJcwotIEFXUyBDb2duaXRvIGZvciB1c2VyIGF1dGhlbnRpY2F0aW9uIHdpdGggUEtDRSBmbG93Ci0gRHluYW1vREIgZm9yIHBlcnNpc3RlbnQgc3RvcmFnZQotIEFscGhhIFZhbnRhZ2UgQVBJIGZvciBzdG9jayBtYXJrZXQgZGF0YQoKIyMgRmVhdHVyZXMKCi0gT0F1dGgyIGF1dGhlbnRpY2F0aW9uIHdpdGggUEtDRSAoUHJvb2YgS2V5IGZvciBDb2RlIEV4Y2hhbmdlKQotIFJlYWwtdGltZSBzdG9jayBwcmljZSBkYXRhCi0gQ29tcGFueSBpbmZvcm1hdGlvbiBsb29rdXAKLSBVc2VyIGZhdm9yaXRlcyBhbmQgd2F0Y2hsaXN0cwotIEhpc3RvcmljYWwgcHJpY2UgZGF0YQoKIyMgUHJvamVjdCBTdHJ1Y3R1cmUKCmBgYArilZTigJTigJQgYmFja2VuZC8gICAgICAgICAgICAgICAjIEJhY2tlbmQgc2VydmVybGVzcyBjb2RlCuKVkiAgIOKVlOKAk+KAlCBmdW5jdGlvbnMvICAgICAgICAgIyBMYW1iZGEgZnVuY3Rpb25zCuKVkiAgIOKVlOKAk+KAlCBsYXllcnMvICAgICAgICAgICAgIyBMYW1iZGEgbGF5ZXJzCuKVkiAgIOKVmuKAk+KAlCBsaWIvICAgICAgICAgICAgICAgIyBTaGFyZWQgbGlicmFyaWVzCuKVlOKAk+KAlCBmcm9udGVuZC8gICAgICAgICAgICAgICMgRnJvbnRlbmQgd2ViIGFwcGxpY2F0aW9uCuKVlOKAk+KAlCBpbmZyYXN0cnVjdHVyZS8gICAgICAgICMgQVdTIENESyBmb3IgaW5mcmFzdHJ1Y3R1cmUgYXMgY29kZQrilZrigJTigJQgc2NyaXB0cy8gICAgICAgICAgICAgICAjIFV0aWxpdHkgc2NyaXB0cwpgYGAKCiMjIERlcGxveW1lbnQKClRoaXMgcHJvamVjdCB1c2VzIEFXUyBDREsgZm9yIGluZnJhc3RydWN0dXJlIGRlcGxveW1lbnQuCgpgYGBiYXNoCm5wbSBpbnN0YWxsCmNkayBib290c3RyYXAKY2RrIGRlcGxveQpgYGAKCiMjIExvY2FsIERldmVsb3BtZW50CgpgYGBiYXNoCm5wbSBpbnN0YWxsCm5wbSBydW4gZGV2CmBgYAo=
+# AWS Serverless Stock API
+
+A serverless application for real-time stock prices with OAuth PKCE authentication flow.
+
+## Architecture
+
+This application uses:
+
+- AWS Lambda for serverless compute
+- Amazon API Gateway for RESTful APIs
+- AWS Cognito for user authentication with PKCE flow
+- DynamoDB for persistent storage
+- Alpha Vantage API for stock market data
+
+## Features
+
+- OAuth2 authentication with PKCE (Proof Key for Code Exchange)
+- Real-time stock price data
+- Company information lookup
+- User favorites and watchlists
+- Historical price data
+
+## Project Structure
+
+```
+├── backend/               # Backend serverless code
+│   ├── functions/         # Lambda functions
+│   ├── layers/            # Lambda layers
+│   └── lib/               # Shared libraries
+├── frontend/              # Frontend web application
+├── infrastructure/        # AWS CDK for infrastructure as code
+└── scripts/               # Utility scripts
+```
+
+## Deployment
+
+This project uses AWS CDK for infrastructure deployment.
+
+```bash
+npm install
+cdk bootstrap
+cdk deploy
+```
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
