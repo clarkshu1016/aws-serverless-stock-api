@@ -13,8 +13,19 @@ const Login: React.FC = () => {
           Get real-time stock price information and track your favorite stocks
         </p>
         
-        <div className="login-image">
-          <img src="/stock-image.jpg" alt="Stock market chart" />
+        <div className="login-image" style={{
+          height: '200px',
+          backgroundColor: '#eee',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: '8px',
+          marginBottom: '24px',
+          color: '#666',
+          fontSize: '18px',
+          fontWeight: 500
+        }}>
+          Stock Market Chart
         </div>
         
         <button onClick={login} className="btn btn-primary login-button">
