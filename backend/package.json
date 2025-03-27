@@ -1,0 +1,25 @@
+{
+  "name": "stock-api-backend",
+  "version": "0.1.0",
+  "description": "Backend functions for stock API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "ts-node-dev --respawn src/local-dev.ts"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.115",
+    "@types/jest": "^29.5.1",
+    "@types/node": "18.16.3",
+    "aws-sdk": "^2.1377.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "aws-lambda": "^1.0.7"
+  }
+}
