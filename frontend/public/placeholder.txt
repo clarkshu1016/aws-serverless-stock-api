@@ -1,0 +1,7 @@
+This file ensures the public directory exists in Git.
+The following files should be added manually if needed:
+- favicon.ico
+- logo192.png
+- logo512.png
+
+These files are referenced in manifest.json but aren't critical for the app to function.
