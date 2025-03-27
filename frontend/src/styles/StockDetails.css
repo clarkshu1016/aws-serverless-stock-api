@@ -1,0 +1,156 @@
+.stock-details {
+  padding: 20px 0;
+}
+
+.stock-details-header {
+  margin-bottom: 24px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.stock-details-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.stock-details-title {
+  margin-bottom: 24px;
+}
+
+.stock-details-title h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.stock-details-title h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #555;
+}
+
+.stock-industry {
+  color: #777;
+  font-size: 16px;
+}
+
+.stock-price-container {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.stock-current-price {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stock-price-change {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stock-price-change.positive {
+  color: #4caf50;
+}
+
+.stock-price-change.negative {
+  color: #f44336;
+}
+
+.stock-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.metric {
+  margin-right: 40px;
+  margin-bottom: 16px;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.metric-value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stock-description {
+  margin-bottom: 24px;
+}
+
+.stock-description h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stock-description p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.stock-details-actions {
+  margin-top: 24px;
+}
+
+.stock-details-actions button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.stock-details-loading,
+.stock-details-error {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.stock-details-error h2 {
+  color: #e53935;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.stock-details-error p {
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.stock-details-error .stock-details-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .stock-details-card {
+    padding: 20px;
+  }
+  
+  .stock-details-title h1 {
+    font-size: 28px;
+  }
+  
+  .stock-details-title h2 {
+    font-size: 20px;
+  }
+  
+  .stock-current-price {
+    font-size: 32px;
+  }
+}
