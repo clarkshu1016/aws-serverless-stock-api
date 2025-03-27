@@ -19,3 +19,32 @@ This application uses:
 - Company information lookup
 - User favorites and watchlists
 - Historical price data
+
+## Project Structure
+
+```
+├── backend/               # Backend serverless code
+│   ├── functions/         # Lambda functions
+│   ├── layers/            # Lambda layers
+│   └── lib/               # Shared libraries
+├── frontend/              # Frontend web application
+├── infrastructure/        # AWS CDK for infrastructure as code
+└── scripts/               # Utility scripts
+```
+
+## Deployment
+
+This project uses AWS CDK for infrastructure deployment.
+
+```bash
+npm install
+cdk bootstrap
+cdk deploy
+```
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
